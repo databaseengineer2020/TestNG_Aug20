@@ -67,17 +67,15 @@ public class HomeWorkWithNewConcept {
 		
 		
 		//Generate Random Number
-		Random rnd = new Random();
-		int generatedNo = rnd.nextInt(999);
+		//Random rnd = new Random();
+		//int generatedNo = rnd.nextInt(999);
 		
 		wait.until(ExpectedConditions.visibilityOfElementLocated(FULLNAME_FIELD_ELEMENT));
 		driver.findElement(FULLNAME_FIELD_ELEMENT).sendKeys(fullName + generatedNo);
 		driver.findElement(EMAIL_FIELD_ELEMENT).sendKeys(generatedNo + emailAddress);
-		
-		
-		
-		
+				
 		
 	}
+
 
 }
